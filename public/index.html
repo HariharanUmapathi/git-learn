@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css" />
+    <script src="%PUBLIC_URL%/js/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <style></style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -32,18 +30,121 @@
     -->
     <title>React App</title>
   </head>
+
   <body>
+    <style>
+      @font-face {
+        src: url("%PUBLIC_URL%/fonts/stylishfont.ttf");
+        font-family: "Iconfont";
+        font-weight: 400;
+      }
+
+      @font-face {
+        src: url("%PUBLIC_URL%/fonts/StylishFont-B.ttf");
+        font-family: "Iconfont-B";
+        letter-spacing: 1px;
+      }
+      .container-fluid.span {
+        background: url("%PUBLIC_URL%/mountain.jpg");
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: calc(100% - 2rem);
+      }
+      #events {
+        display: flex;
+        border: 1px solid red;
+        background: white;
+        padding: 3rem;
+        position: relative;
+        z-index: 99886;
+        width: 100%;
+      }
+
+      .events-header {
+        display: block;
+        background: white;
+        border: 1px solid;
+        width: 50%;
+        min-width: 25%;
+        position: relative;
+        z-index: 99886;
+      }
+
+      .events-holder {
+        display: flex;
+        min-width: 75%;
+        overflow: scroll;
+        position: relative;
+        z-index: 99885;
+      }
+
+      /*  .event {
+        margin: 10px;
+        background-color: aqua;
+        min-width: 66%;
+        min-height: 250px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      } */
+
+      .event-tag {
+        background-color: white;
+        width: 50%;
+        height: 125px;
+        overflow: hidden;
+      }
+      footer.jumbotron {
+        background: linearGradient(180deg, #16f39059, transparent) !important;
+      }
+    </style>
+    <script>
+      //Events Holder
+      var position = $(".events-holder").css("transform");
+      $("#prev").on("click", (e) => {
+        console.log(e.target);
+        $(".events-holder").css({ transform: "translateX(" + position + ")" });
+      });
+      $("#next").on("click", (e) => {
+        console.log(e.target);
+      });
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <section id="events" style="display: none">
+      <div class="events-header col-5">
+        <h1>Upcoming Events</h1>
+        Lorem Ipsium Lorem Ipsium Lorem Ipsium Lorem Ipsium Lorem Ipsium Lorem
+        Ipsium Lorem Ipsium Lorem Ipsium
+        <div style="position: absolute">
+          <button id="prev">Prev</button>
+          <button id="next">Next</button>
+        </div>
+      </div>
+      <div class="events-holder col-7">
+        <div class="event" id="">
+          <div class="event-tag">
+            Lorem Ipsium this event content is blah blh blab
+          </div>
+        </div>
+        <div class="event" id="">
+          <div class="event-tag">
+            Lorem Ipsium this event content is blah blh blab
+          </div>
+        </div>
+        <div class="event" id="">
+          <div class="event-tag">
+            Lorem Ipsium this event content is blah blh blab
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const len = $(".event-holder").children().length;
+      var current = 0;
+      $(".event-holder").remove().children();
+    </script>
   </body>
 </html>

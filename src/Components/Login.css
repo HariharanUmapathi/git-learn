@@ -1,0 +1,36 @@
+#login-form {
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px silver;
+    max-width: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 3rem;
+}
+div#msg{
+    border:1px solid gray;
+    border-left-width:5px;
+    border-radius:0px 0px 0px 1rem;
+    padding:10px;
+}
+div.OK
+{
+    color:green;
+    border-left-color:green;
+    border:1px solid red;
+    
+}
+
+div.ERROR{
+    color:red;
+    border-left-color:red;
+    border:1px solid red;
+}
+.form-group>* {
+    margin: 10px;
+}

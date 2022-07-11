@@ -1,9 +1,87 @@
-.App {
-  text-align: center;
+
+
+.jumbotron {
+  color: black;
+  width: 100%;
+  margin: 0px;
 }
 
+
+.border-radius-5{
+  border-radius:15px;
+}
+
+.icon-font
+{
+  font-family:"IconFont-B";
+}
+span.icon-font{
+  font-family:"IconFont";
+}
+.icon-font-s5{
+  font-size:5rem;
+}
+.icon-font-s4{
+  font-size:4rem;
+}
+.icon-font-s3{
+  font-size:3rem;
+}
+.container-fluid.span{
+  padding:1rem;
+}
+.fa {
+  color:#61dafb;
+  padding:3px;
+  font-size:2rem;
+}
+.video
+{
+ background:rebeccapurple; 
+}
+.App {
+  margin:auto;
+  background:url("https://freellustrustrations.s3.us-east-2.amazonaws.com/free-images/thumbimg_25361957thumbejpg.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+#navbar.collapse{
+  justify-content: flex-end;
+}
+nav{
+  box-shadow:0px 0px 7px black;
+}
+.navbar-dark
+{
+  background-color:transparent;
+}
+
+.navbar-nav
+{
+ color:white;
+}
+.navbar-nav > *
+{
+  margin:0.6rem;
+  padding:0.3rem;
+}
+.navbar-brand .nav-link,.navbar-brand .nav-link:hover {
+text-decoration:none;
+}
+.navbar-nav .nav-link
+{
+  border:0.05em solid gray;
+  border-radius:0.5rem;
+  padding:0px 10px 0px 10px ;
+  font-size:calc(1rem - (-  5px));
+}
+.title{
+  font-family:Iconfont;
+  font-size:5rem;
+}
 .App-logo {
-  height: 40vmin;
+  
   pointer-events: none;
 }
 
@@ -24,6 +102,10 @@
   color: white;
 }
 
+.jumbotron
+{
+  background-color: white;
+}
 .App-link {
   color: #61dafb;
 }

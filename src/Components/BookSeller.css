@@ -1,0 +1,27 @@
+.BookSeller
+{
+	position:relative;
+	font-size:1rem;
+	
+}
+span.name{
+	font-size:5rem;
+}
+.BookSeller div.row
+{
+	background:white;
+	border-radius:1rem;
+	box-shadow:0px 0px 10px silver;
+}
+
+.BookSeller img
+{
+ height:200px;
+width:200px;
+border-radius:50%; 
+position:relative;
+top:-5rem;
+left:-11rem;
+
+
+}

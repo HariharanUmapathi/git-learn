@@ -1,0 +1,30 @@
+.todolist
+{
+    position:relative;
+    top:5rem;
+    display:block;
+}
+.todolist input
+{
+    font-size:1.5rem;
+}
+.todolist td
+{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.todolist td > *
+{
+margin:.5rem;
+}
+.todo-head{
+    display:flex;
+}
+.todo-head > *
+{
+    margin:5px;
+}
+div {
+    position:relative;
+}

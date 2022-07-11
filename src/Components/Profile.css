@@ -1,0 +1,71 @@
+.Profile{
+    width:450px;
+    min-width:300px;
+    max-width:500px;
+    
+}
+
+.Profile .card-header span:nth-child(2)
+{
+ padding:3px;
+ background-color: black;
+ font-weight: 700;
+ color:white;
+}
+
+.Profile .card-body{
+    display:flex;        
+}
+
+@media screen and (max-width:320px){
+
+}
+@media screen and (min-width:321px) and (max-width:480px)
+{
+    .Profile
+    {
+       min-width:100%; 
+       padding:5px;
+    }
+
+    .Profile .card-body{
+        flex-flow:column;
+    }
+
+}
+
+@media screen and (min-width:481px) and (max-width:767px){
+    .Profile{
+        padding:1rem;
+    }
+    .Profile .card-body{
+        flex-flow:column;
+        
+    }
+    img
+    {
+        padding:5px;
+    }
+    .details {
+        padding: 0.7em;
+        min-width:max-content;
+    }
+    .details .name{
+        font-size:2rem;
+        text-align:center;
+    }
+    .details span{
+        color:black;
+        padding:.8rem;
+    }
+    .details p
+    {
+        width:max-content;
+        text-align:left;
+    }
+    *
+    {
+        text-align:left;
+    }
+}
+

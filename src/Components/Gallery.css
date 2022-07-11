@@ -1,0 +1,57 @@
+.Gallery
+{
+    display:flex;
+    width:100%;
+    overflow-x:auto;
+}
+
+.Gallery > *
+{
+   margin:0.1rem;
+   border:2px solid silver; 
+   padding:10px;
+   border-radius:10px;
+
+}
+
+section h1::after
+{
+    position:relative;
+    left:10px;
+    font-size:0.7rem;
+    content:"more";
+    text-decoration:underline;
+}
+.nav-prev
+{
+position:relative;
+}
+.nav-next
+{
+float:right;
+}
+.Author {
+    background-color:rgba(255,69,0,0.6);
+}
+.Author .details
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.Author .details a
+{
+    padding:5px;
+    margin:7px;
+}
+.Author img
+{
+    width:100px;
+    height:100px;
+    position:relative;
+    margin:auto;
+    border-radius:50%;
+    border:3px solid white;
+    box-shadow:2px 5px 10px black;
+}

@@ -1,0 +1,59 @@
+.events{
+    padding:1rem;
+    margin:5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    border:1px solid cyan;
+}
+.event-holder,.event-header
+{
+text-align:center;
+}
+
+.event-holder{
+    display:grid;
+    grid-auto-flow: column;
+    position:relative;
+    grid-auto-columns:66%;
+}
+.event-holder > *
+{
+background-color: blue ;
+margin:10px;
+transform:scale(0);
+filter:opacity(0.5);
+
+}
+
+div.event.active::after{
+    transform:scale(1);
+}
+.event p{
+    position:absolute;
+    bottom:10px;
+    padding:10px;
+    width:50%;
+    margin-bottom:10px;
+    background-color: white;
+}
+
+.event.active{
+    transition:all 0.5s ease-in;
+    transform:scale(1);
+    display:block;
+}
+
+
+
+[aria-controls='event-holder'] button{
+    background:white;
+    color:transparent;
+    border:none;
+    border-radius: 50%;
+    margin:20px;
+}
+.fa{
+    color:blueviolet;
+    background:white;
+}

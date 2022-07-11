@@ -1,0 +1,29 @@
+.Book
+{
+    width:300px;
+    border:none;
+    border-radius:20px;
+    margin:10px;
+    box-shadow:5px 6px 7.5px silver;
+    background-color:aliceblue;
+}
+img
+{
+    width:145px;
+    height:160px;
+    padding:5px;
+    border-radius:20px;
+    box-shadow:none;
+    border:none;
+}
+p
+{
+   text-align:center;
+   color:blueviolet;
+   font-weight:900;
+}
+small
+{
+    text-align:right;
+   color:green; 
+}
